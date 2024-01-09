@@ -1,4 +1,4 @@
-package com.example.compose_archtiecture_pattern
+package com.example.compose_archtiecture_pattern.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
