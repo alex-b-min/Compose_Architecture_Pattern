@@ -2,14 +2,14 @@ package com.example.compose_archtiecture_pattern.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.compose_archtiecture_pattern.data.data_source.NoteDatabase
-import com.example.compose_archtiecture_pattern.data.repository.NoteRepositoryImpl
-import com.example.compose_archtiecture_pattern.domain.repository.NoteRepository
-import com.example.compose_archtiecture_pattern.domain.use_case.AddNoteUseCase
-import com.example.compose_archtiecture_pattern.domain.use_case.DeleteNotesUseCase
-import com.example.compose_archtiecture_pattern.domain.use_case.GetNoteByIdUseCase
-import com.example.compose_archtiecture_pattern.domain.use_case.GetNotesUseCase
-import com.example.compose_archtiecture_pattern.domain.use_case.NoteUseCases
+import com.example.compose_archtiecture_pattern.feature_note.data.data_source.NoteDatabase
+import com.example.compose_archtiecture_pattern.feature_note.data.repository.NoteRepositoryImpl
+import com.example.compose_archtiecture_pattern.feature_note.domain.repository.NoteRepository
+import com.example.compose_archtiecture_pattern.feature_note.domain.use_case.AddNoteUseCase
+import com.example.compose_archtiecture_pattern.feature_note.domain.use_case.DeleteNotesUseCase
+import com.example.compose_archtiecture_pattern.feature_note.domain.use_case.GetNoteByIdUseCase
+import com.example.compose_archtiecture_pattern.feature_note.domain.use_case.GetNotesUseCase
+import com.example.compose_archtiecture_pattern.feature_note.domain.use_case.NoteUseCases
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
