@@ -3,15 +3,17 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven("https://storage.googleapis.com/r8-releases/raw")
     }
 
     dependencies {
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.45")
+        classpath("com.android.tools:r8:8.2.16-dev")
     }
 }
 
 
 plugins {
-    id("com.android.application") version "8.2.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
+    id("com.android.application") version "7.3.1" apply false
+    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
 }
