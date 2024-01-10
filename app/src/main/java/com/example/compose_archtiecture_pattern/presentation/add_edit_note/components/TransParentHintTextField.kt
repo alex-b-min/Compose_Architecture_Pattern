@@ -22,7 +22,9 @@ fun TransParentHintTextField(
     singleLine: Boolean = false,
     onFocusChange: (FocusState) -> Unit
 ) {
-    Box {
+    Box(
+        modifier = Modifier
+    ) {
         BasicTextField(
             value = text,
             onValueChange = onValueChange,
@@ -36,11 +38,10 @@ fun TransParentHintTextField(
         )
         if (isHintVisible) {
             Text(
-                text = text,
+                text = hint,
                 style = textStyle,
                 color = Color.DarkGray
             )
         }
-
     }
 }
