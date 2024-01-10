@@ -7,6 +7,7 @@ import com.example.compose_archtiecture_pattern.data.repository.NoteRepositoryIm
 import com.example.compose_archtiecture_pattern.domain.repository.NoteRepository
 import com.example.compose_archtiecture_pattern.domain.use_case.AddNoteUseCase
 import com.example.compose_archtiecture_pattern.domain.use_case.DeleteNotesUseCase
+import com.example.compose_archtiecture_pattern.domain.use_case.GetNoteByIdUseCase
 import com.example.compose_archtiecture_pattern.domain.use_case.GetNotesUseCase
 import com.example.compose_archtiecture_pattern.domain.use_case.NoteUseCases
 import dagger.Module
@@ -41,7 +42,8 @@ object AppModule {
         return NoteUseCases(
             getNotes = GetNotesUseCase(repository),
             deleteNotesUseCase = DeleteNotesUseCase(repository),
-            addNoteUseCase = AddNoteUseCase(repository)
+            addNoteUseCase = AddNoteUseCase(repository),
+            getNoteByIdUseCase = GetNoteByIdUseCase(repository)
         )
     }
 }
