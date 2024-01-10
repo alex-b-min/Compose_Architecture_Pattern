@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Icon
@@ -23,7 +22,6 @@ import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.clipPath
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -61,7 +59,7 @@ fun NoteItem(
                         ColorUtils.blendARGB(note.color, 0x000000, 0.2f)
                     ),
                     topLeft = Offset(size.width - cutCornerSize.toPx(), -100f),
-                    size = Size(cutCornerSize.toPx() + 100f, cutCornerSize.toPx()),
+                    size = Size(cutCornerSize.toPx() + 100f, cutCornerSize.toPx() + 100f),
                     cornerRadius = CornerRadius(cornerRadius.toPx())
                 )
             }
